@@ -26,8 +26,11 @@ setTimeout(()=>{
   console.log("-----------------------")
    console.log('HelloWorldThree-同时使用')
   arr3.value = [1,2,3]
-  arr3.value.push(1)
+  setTimeout(()=>{
+     arr3.value.push(1) //这里不触发了
+  },1000)
 },3500)
+
 
 
 </script>
